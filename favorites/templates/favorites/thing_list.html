@@ -1,3 +1,5 @@
+<a href={% url 'django-admindocs-docroot' %}>Admin Docs</a>
+<a href={% url 'api:things' %}>API</a>
 <h1>Things List</h1>
 {% for thing in thing_list %}
     <h2>{{ thing.name }}</h2>
