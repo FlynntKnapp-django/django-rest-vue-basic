@@ -20,8 +20,7 @@ from favorites import views
 from django.views.generic import RedirectView
 
 urlpatterns = [
-    # Temporary redirect server root to the admin site.
-    path("", RedirectView.as_view(url="admin/")),
     path("admin/doc/", include("django.contrib.admindocs.urls")),
     path("admin/", admin.site.urls),
+    path("favorites/", include("favorites.urls")),
 ]

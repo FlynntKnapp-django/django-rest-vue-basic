@@ -6,3 +6,4 @@ from django.contrib import admin
 class ThingAdmin(admin.ModelAdmin):
     list_display = ("name", "description")
     search_fields = ("name", "description")
+    # list_filter = ("name", "description")
