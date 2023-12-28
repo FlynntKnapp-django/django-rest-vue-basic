@@ -7,6 +7,7 @@ class ThingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Thing
         fields = (
+            "id",
             "name",
             "description",
         )

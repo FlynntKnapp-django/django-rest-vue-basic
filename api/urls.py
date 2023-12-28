@@ -8,7 +8,7 @@ app_name = "api"
 router = DefaultRouter()
 router.register("things", views.ThingViewSet, basename="things")
 
-# Add a named URL pattern for the API root
 urlpatterns = [
+    # Add a named URL pattern for the API root
     path("", router.get_api_root_view(), name="api-root"),
 ] + router.urls
